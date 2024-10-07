@@ -1,0 +1,53 @@
+/* TextChat用 CSS */
+/* ここから */
+
+.text-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.text-chat-message-list-container {
+  height: 12rem;
+  border: 1px dotted grey;
+  overflow: auto;
+}
+
+.text-chat-message-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100%;
+  padding: 0 0.2rem;
+}
+
+
+.text-chat-from-me {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-chat-from-them {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-chat-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+
+.text-chat-input select {
+  flex: 0 1 auto;
+}
+
+.text-chat-input input {
+  flex: 1 1 auto;
+}
+
+.text-chat-input button {
+  flex: 0 1 auto;
+}
+
+/* ここまで */

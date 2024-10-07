@@ -1,0 +1,68 @@
+/* ToDoリスト用 CSS */
+/* ここから */
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted grey;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+}
+
+.todo-list-head {
+  font-size: 120%;
+  border-bottom: 1px dotted lightblue;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+
+.todo-list-head span {
+  flex: 1;
+}
+
+.todo-list-head label {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.todo-list-head label input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.todo-list-task-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  margin-top: 0.8rem;
+}
+
+.todo-list-task-input input[type="text"] {
+  flex: 1;
+}
+
+.todo-list-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.5rem;
+  border-bottom: 1px dotted grey;
+}
+
+/* descriptionはタスクの中身であり、タスク自体にはチェックボックスとdescriptionと追加ボタンがある。*/
+.todo-list-description {
+  flex: 1;
+}
+
+.todo-list-completed .todo-list-description {
+  text-decoration: line-through;
+}
+
+.todo-list-overdue {
+  background-color: hsl(0, 95%, 76%);
+}
+
+/* ここまで */

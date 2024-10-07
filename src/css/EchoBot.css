@@ -1,0 +1,6 @@
+.echo-bot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
